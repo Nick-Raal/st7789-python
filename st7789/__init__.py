@@ -189,9 +189,7 @@ class ST7789(object):
         if isinstance(data, numbers.Number):
             data = [data & 0xFF]
         # Write data a chunk at a time.
-        for start in range(0, len(data), chunk_size):
-            end = min(start + chunk_size, len(data))
-            self._spi.xfer(data[start:end])
+        self._spi.writebytes2(data)
 
     def set_backlight(self, value):
         """Set the backlight on/off."""
