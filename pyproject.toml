@@ -3,16 +3,17 @@ requires = ["hatchling", "hatch-fancy-pypi-readme"]
 build-backend = "hatchling.build"
 
 [project]
-name = "st7789"
+name = "st7789-optimized"
 dynamic = ["version", "readme"]
 description = "Driver for ST7789-based TFT LCD displays."
 license = {file = "LICENSE"}
 requires-python = ">= 3.7"
 authors = [
     { name = "Philip Howard", email = "phil@pimoroni.com" },
+    { name = "Nicholas Raal", email = ""}
 ]
 maintainers = [
-    { name = "Philip Howard", email = "phil@pimoroni.com" },
+    { name = "Nicholas Raal", email = "" },
 ]
 keywords = [
     "Pi",
@@ -42,8 +43,7 @@ dependencies = [
 ]
 
 [project.urls]
-GitHub = "https://www.github.com/pimoroni/st7789-python"
-Homepage = "https://www.pimoroni.com"
+GitHub = "https://www.github.com/Nick-Raal/st7789-python"
 
 [tool.hatch.version]
 path = "st7789/__init__.py"
